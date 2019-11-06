@@ -1,0 +1,179 @@
+a:link
+{
+text-decoration:none;
+color:#E5E5E5;
+font-weight:bold;
+font-size:12px;
+font-family:Arial;
+
+}
+
+a:visited
+{
+
+}
+a:hover
+{
+color:#999999;
+
+}
+
+
+
+#div1
+{
+position: absolute;
+color: white;
+width: 1300px;
+height: 30px;
+top:5px;
+left:10px;
+text-align: right;
+background-color: #CCE2FF;
+padding: 4px;
+font-family:"Arial";
+font-size: 20px;
+border-color: green;
+border-width: 2px;
+}
+
+#div2
+{
+background-color: #f0f0f0;
+position: absolute;
+width: 400px;
+height: 600px;
+top:50px;
+left:10px;
+
+}
+
+#div3
+{
+background-color: #f0f0f0;
+position: absolute;
+width: 900px;
+height: 600px;
+top:50px;
+left:420px;
+
+}
+
+
+.botonmenu
+{
+border-style: solid;
+border-color :white;
+border-width: 2px;
+background-color: #CCE2FF;
+text-align: center;
+margin: 10px;
+box-shadow: 3px 3px white;
+
+}
+
+.slider { width: 95%; margin: auto; overflow: hidden;}
+.slider ul { display: flex; padding: 0; width: 400%; animation: cambio 20s infinite alternate linear;}
+.slider li { width: 100%; list-style: none;}
+.slider img { width: 100%;}
+@keyframes cambio { 0% {margin-left: 0;} 20% {margin-left: 0;} 25% {margin-left: -100%;} 45% {margin-left: -100%;} 50% {margin-left: -200%;} 70% {margin-left: -200%;} 75% {margin-left: -300%;} 100% {margin-left: -300%;}}
+
+
+/* tabla con estilo css*/
+body {font-family: Arial, Helvetica, sans-serif;}
+
+table { font-family: “Lucida Sans Unicode”, “Lucida Grande”, Sans-Serif;
+font-size: 12px; margin: 45px; width: 480px; text-align: left; border-collapse: collapse; }
+
+th { font-size: 13px; font-weight: normal; padding: 8px; background: #b9c9fe;
+border-top: 4px solid #aabcfe; border-bottom: 1px solid #fff; color: #039; }
+
+td { padding: 8px; background: #e8edff; border-bottom: 1px solid #fff;
+color: #669; border-top: 1px solid transparent; }
+
+
+
+<style>
+ul.menured * {margin: 0 auto; padding: 0; text-indent: 0;
+-moz-transition: all .5s ease-in-out;-webkit-transition: all .5s ease-in-out;transition: all .5s ease-in-out;}
+
+ul.menured {list-style: none; width: 1800px; max-width: 100%; margin: 0 auto; text-align: center;}
+
+ul.menured li {position: relative; display:inline-block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width:44px; height: 44px; overflow: hidden; margin: 2px; padding: 5px; border-radius: 44px; border: 1px solid transparent; background: #fff;
+-moz-box-shadow: 1px 1px 3px #555; -webkit-box-shadow: 1px 1px 3px #555; box-shadow: 1px 1px 3px #555;}
+
+ul.menured li a[class^=red] {position: absolute; top: 5px; left: 5px; display: block;width: 32px;height: 32px; -moz-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg);}
+
+a.red1 {background:url(https://2.bp.blogspot.com/-BLOpL79hRq0/UdNeyumjXYI/AAAAAAAAK7E/4gCBEFR4JRk/s32/home.png) no-repeat;}
+a.red2 {background:url(https://2.bp.blogspot.com/-rvP0hlwHzEk/UdNeoq9rEgI/AAAAAAAAK60/Nq_kzwUPiFY/s32/info.png) no-repeat;}
+a.red3 {background:url(https://2.bp.blogspot.com/-5H9SkAxPuXQ/UdNep8XWLzI/AAAAAAAAK68/BkXJ4YvmGOg/s32/redes.png) no-repeat;}
+a.red4 {background:url(https://4.bp.blogspot.com/-kyZIdwOjJmI/UdNen_SC6dI/AAAAAAAAK6s/BpmHTKLYkNg/s32/contacto.png) no-repeat;}
+
+ul.menured li div {margin: 0px 8px 5px 38px; text-align: center;}
+ul.menured li div h5 {text-align: left; text-transform: uppercase;}
+ul.menured li div a {display: inline;margin: 0 3px;font-size: 12px; color: #F36900;}
+
+ul.menured div a:hover {color: grey;}
+ul.menured li:hover {width:240px;}
+ul.menured li:hover a[class^=red] {-moz-transform: rotate(720deg); -webkit-transform: rotate(720deg); transform: rotate(720deg);}
+</style>
+
+
+/* Contenedor general y reset de margin y padding */
+.expandir * {
+margin: 0;
+padding: 0;
+}
+.expandir {
+font-family:Arial, Helvetica, sans-serif;
+line-height:normal;
+margin:20px auto 30px;
+height:80px;
+width:530px;
+}
+/* Las imágenes irán en forma de lista */
+.expandir ul {
+padding-top:10px;
+margin-left:10px;
+}
+/* Se hacen flotar los elementos para que queden en línea y se elimina el estilo que podría haber predefinido para listas */
+.expandir ul li {
+float:left;
+list-style-type:none;
+}
+/* Anulamos estilo predifinido para enlaces en listas */
+.expandir ul li a {
+text-decoration:none;
+}
+/* Estilo de cada imagen en situación inicial y transición suave */
+.expandir ul li a img {
+width:32px; /* Ancho inicial imagénes. 50% real */
+height:32px; /* Alto inicial imagénes. 50% real */
+border:none;
+-webkit-transition: all .3s ease-in;
+-moz-transition: all .3s ease-in;
+-o-transition: all .3s ease-in;
+-ms-transition: all .3s ease-in;
+transition: all .3s ease-in;
+}
+/* El texto que acompaña a las imágenes no se ve inicialmente */
+.expandir ul li a span {
+display:none;
+}
+/* Mostramos el texto al hacer hover */
+.expandir ul li:hover a span {
+display:block;
+font-size:14px;
+text-align:center;
+color:#000;
+}
+/* Agrandamos la imagen al hacer hover */
+.expandir ul li:hover a img {
+width:64px;
+height:64px;
+-webkit-transition: all .3s ease-in-out;
+-moz-transition: all .3s ease-in-out;
+-o-transition: all .3s ease-in-out;
+-ms-transition: all .3s ease-in-out;
+transition: all .3s ease-in-out;
+}

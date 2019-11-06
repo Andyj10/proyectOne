@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="estilos1.css" >
+        <title>Ingreso Nuevo Alumno </title>
+    </head>
+    <body>
+	<div id="div1">
+        <center>Ingreso de nuevo Empleado</center>
+    </div>
+
+	<div id="div2">
+
+        <div class="botonmenu"> 
+        <a href="Listado.html"> Listado de Empleados </a> <br /> <br />
+        </div>
+         
+        <div class="botonmenu">  
+        <a href="GestionDeCursos.jsp"> Gestion de Empleados</a>
+         </div>
+         
+
+         <div class="botonmenu">  
+        <a href="index.html"> Volver</a>
+         </div>
+
+         </div>
+
+
+
+	   <div id="div3">
+
+
+         <center>
+         <form action="ingresoDatosAlumno.jsp"> 
+        
+        <fieldset>
+  <legend>Datos personales</legend>
+  <p>Nombre: <input type="text" name="nombre" size="30"></p> 
+  <p>Edad: <input type="number" name="edad"></p> 
+  Sexo: M:<input type="radio" name="sexoalum" value="M"/> 
+             F: <input type="radio" name="sexoalum" value="F"> <br /><br />
+        Estado: Activo:<input type="radio" name="estadoalum" value="A"/> 
+                Inactivo: <input type="radio" name="estadoalum" value="I"> <br /><br />
+Area: <select name="Area">
+  <option value="volvo">Front End</option>
+  <option value="saab">Banck End</option>
+  <option value="fiat">Full Stak</option>
+  <option value="audi">Infraestructura</option>
+</select>
+</fieldset>
+
+<fieldset>
+  <legend>Conocimientos</legend>
+  <p>Lenguaje de programación dominante:
+    <input type="radio" name="p1" value="1"> C#
+    <input type="radio" name="p1" value="2"> Java
+    <input type="radio" name="p1" value="3"> Phyton
+  </p>
+  <p>TIpo de dominio:
+    <input type="radio" name="p2" value="1"> Baja
+    <input type="radio" name="p2" value="2"> Media
+    <input type="radio" name="p2" value="3"> Alta
+  </p>
+</fieldset>
+        
+        
+                <input type="submit" onclick='alert("Empleado Agregado.")' value="Agregar Empleado"/> 
+        </form>
+         </center>
+         
+       </div>
+            
+    </body>
+</html>
